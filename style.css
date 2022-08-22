@@ -1,0 +1,96 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(img/fondo.jpg);
+    
+}
+.main_container {
+    height: 800px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: lightblue;
+    height: 50px;
+    margin-bottom: 1%;
+}
+.container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    background-color: rgba(0, 255, 255, 0.486);
+    border-radius: 5px;
+}
+.container img {
+    width: 30%;
+    margin: 2%;
+}
+.container p {
+    width: 100%;
+}
+.container p:nth-child(1) {
+    text-transform: uppercase;
+}
+.container p:nth-child(3)::first-letter {
+    text-transform: uppercase;
+}
+
+.new_name_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.new_name_div input {
+    text-align: center;
+    color: white;
+    font-size: large;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.613);
+    margin-bottom: 5%;
+    border-radius: 5px;
+    transition: all 300ms;
+}
+.new_name_div input:hover {
+    transition: all 300ms;
+    background-color: black;
+    padding: 3%;
+}
+.new_name_div button {
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 3%;
+    text-transform: uppercase;
+    transition: all 300ms;
+}
+.new_name_div button:hover {
+    transition: all 300ms;
+    padding: 4%;
+    background-color: darkblue;
+    color: white;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 70%;
+    }
+    .container img {
+        width: 70%;
+    }
+    .new_name_div * {
+        width: 100%;
+    }
+    .new_name_div button {
+        width: 30%;
+    }
+}
